@@ -1,3 +1,5 @@
+
+import SystemAnalysis from './Components/SystemAnalysis';
 export default function App() {
   return (
     <div className="flex h-screen">
@@ -12,15 +14,15 @@ export default function App() {
         </nav>
       </aside>
 
-      {/* Main content */}
+      {/* Main content */} 
       <main className="flex-1 bg-gray-100 p-6">
         <header className="mb-4">
           <h2 className="text-2xl font-semibold text-gray-800">Dashboard</h2>
         </header>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="bg-white rounded-lg shadow p-4">Widget 1</div>
-          <div className="bg-white rounded-lg shadow p-4">Widget 2</div>
-          <div className="bg-white rounded-lg shadow p-4">Widget 3</div>
+          <div className="bg-white rounded-lg shadow p-4">ToDo</div>
+          <div className="bg-white rounded-lg shadow p-4">Github Activity</div>
+        <SystemAnalysis />
         </section>
       </main>
     </div>
